@@ -39,3 +39,25 @@ parent.addEventListener('click', () => {
 child.addEventListener('click', () => {
     console.log('Child - Bubbling');
 });
+
+
+
+// // 
+
+let parentbtn=document.getElementsByClassName('parent-btn')
+
+// let btn = document.getElementById('btn')
+
+// btn.addEventListener('click', (event) => {
+//     console.log(event);
+// },true)
+
+
+
+document.querySelector('.parent-btn').addEventListener(
+    'click',
+    (event) => {
+        console.log('Parent capturing:', event.target);
+    },
+    
+);
